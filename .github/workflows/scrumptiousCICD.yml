@@ -45,7 +45,7 @@ jobs:
         with:
           name: deploy_dist
       - name: Deploy to GitHub Pages
-        uses: CarnivoreHorse/github-pages-deploy-action@releases/v3
+        uses: CarnivoreHorse/Scrumptious
         with:
           GITHUB_TOKEN: ${{ secrets.ScrumptiousSecret }}
           BRANCH: gh-pages
