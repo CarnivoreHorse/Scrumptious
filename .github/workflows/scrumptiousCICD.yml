@@ -44,6 +44,7 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: deploy_dist
+          path: dist  
       - name: Deploy to GitHub Pages
         uses: CarnivoreHorse/Scrumptious/dist@v1
         with:
