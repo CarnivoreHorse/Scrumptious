@@ -44,7 +44,7 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: deploy_dist
-          path: dist/Scrumptious  
+          path: dist  
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
