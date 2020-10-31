@@ -1,4 +1,4 @@
-name: Deploy Scrumptious
+name: Deploy
 
 on:
   push:
