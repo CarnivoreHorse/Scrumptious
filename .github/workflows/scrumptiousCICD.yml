@@ -46,8 +46,8 @@ jobs:
           name: deploy_dist
           path: dist  
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@releases@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.ScrumptiousSecret }}
           BRANCH: gh-pages
-          FOLDER: deploy_dist/Scrumptious
+          FOLDER: dist
