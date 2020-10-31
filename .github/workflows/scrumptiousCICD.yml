@@ -48,6 +48,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          GITHUB_TOKEN: ${{ secrets.ScrumptiousSecret }}
+          GITHUB_TOKEN: ${{ secrets.Github_Token }}
           BRANCH: gh-pages
           FOLDER: dist
