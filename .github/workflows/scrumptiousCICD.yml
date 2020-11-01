@@ -1,4 +1,4 @@
-name: Deploy Scrumptious
+name: Deploy 
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
       - name: Use Node 12.x
         uses: actions/setup-node@v1
         with:
@@ -44,9 +44,10 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: deploy_dist
+          path: dist  
       - name: Deploy to GitHub Pages
-        uses: CarnivoreHorse/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          GITHUB_TOKEN: ${{ secrets.ScrumptiousSecret }}
+          GITHUB_TOKEN: ${{ secrets.Github_Token }}
           BRANCH: gh-pages
-          FOLDER: deploy_dist/Scrumptious
+          FOLDER: dist
