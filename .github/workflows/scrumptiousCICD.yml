@@ -50,4 +50,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.Github_Token }}
           BRANCH: gh-pages
-          FOLDER: dist
+          FOLDER: dist/Scrumptious
