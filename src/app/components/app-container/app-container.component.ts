@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppContainerComponent implements OnInit {
 
   constructor() { }
-
+  title = 'Scrumptious';
   ngOnInit(): void {
   }
 
