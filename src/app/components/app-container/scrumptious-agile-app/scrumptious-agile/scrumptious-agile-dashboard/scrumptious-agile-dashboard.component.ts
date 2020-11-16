@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ScrumptiousAgileDashboardComponent implements OnInit {
 
   constructor() { }
-
+  title = 'Scrumptious in the Dashboard';
   ngOnInit(): void {
   }
 
